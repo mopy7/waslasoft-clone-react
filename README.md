@@ -82,6 +82,12 @@ Open the local URL shown by Vite (usually `http://localhost:5173`).
 - `npm run preview` - Preview the production build locally
 - `npm run lint` - Run ESLint
 
+## Cloudflare Deploy Notes
+
+- `wrangler.toml` configures static asset deployment from `dist/`.
+- SPA routing fallback is handled by `assets.not_found_handling = "single-page-application"`.
+- Do not add `/* /index.html 200` back into `_redirects`; Cloudflare Worker deployments reject that rule with `code: 10021`.
+
 ## Styling Notes
 
 - `src/index.css` contains most shared styling for layout, sections, and components.
@@ -101,4 +107,3 @@ Open the local URL shown by Vite (usually `http://localhost:5173`).
 - Update brand copy and CTA text in `src/pages/*.jsx`.
 - Replace logos and imagery inside `public/images`.
 - Adjust theme colors and spacing in `src/index.css`.
-
