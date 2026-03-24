@@ -1,0 +1,51 @@
+body {
+  overflow-x: hidden;
+}
+
+.hero-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.hero-headlines h1,
+.hero-headlines h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin: 0 0 30px 0;
+}
+
+.hero-buttons {
+  margin-bottom: 40px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.stat-number,
+.stat-label {
+  margin: 0;
+}
+
+/* Align hero content with navigation logo */
+.hero-content {
+  padding-left: 20px;
+}
+
+.hero-headlines,
+.hero-description,
+.hero-buttons,
+.hero-stats {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding-left: 15px;
+  }
+}

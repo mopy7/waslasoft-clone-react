@@ -1,0 +1,288 @@
+html {
+scroll-behavior: smooth;
+}
+
+/* Reset and spacing fix */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+color: #333333;
+padding-top: 70px !important;
+}
+
+/* Wider section styling */
+.partner-intro {
+max-width: 1200px;
+margin: 0 auto;
+width: 100%;
+}
+
+.section-title {
+font-size: 2.5rem;
+font-weight: 600;
+color: #333;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.section-subtitle {
+font-size: 1.1rem;
+color: #666;
+text-align: center;
+max-width: 800px;
+margin: 0 auto 50px;
+line-height: 1.6;
+}
+
+.section {
+padding: 80px 0;
+}
+
+.section-title {
+font-size: 2.5rem;
+font-weight: 600;
+color: #333;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.section-subtitle {
+font-size: 1.1rem;
+color: #666;
+text-align: center;
+max-width: 1000px;
+margin: 0 auto 50px;
+line-height: 1.6;
+}
+
+.partner-card {
+background: white;
+border-radius: 12px;
+padding: 30px;
+margin-bottom: 30px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+border: 1px solid #e0e0e0;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.partner-card h3 {
+color: #0073ff;
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 15px;
+}
+
+.partner-card p {
+color: #666;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+.partner-cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+margin-top: 40px;
+}
+
+.cta-section {
+background: linear-gradient(to bottom, #0073ff 0%, #0caa64 100%);
+color: white;
+text-align: center;
+padding: 60px 0;
+}
+
+.cta-section h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.cta-section p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+opacity: 0.9;
+}
+
+.btn-primary {
+background: #ffdc00;
+color: #333;
+padding: 12px 30px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+display: inline-block;
+transition: all 0.3s ease;
+border: 2px solid #ffdc00;
+}
+
+.btn-primary:hover {
+background: transparent;
+color: #ffdc00;
+transform: translateY(-2px);
+}
+
+.btn-outline {
+background: transparent;
+color: white;
+padding: 12px 30px;
+border: 2px solid white;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+display: inline-block;
+margin-left: 15px;
+transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+background: white;
+color: #0073ff;
+transform: translateY(-2px);
+}
+
+/* Utility classes */
+.checkmark {
+color: #28a745;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.not-available {
+color: #6c757d;
+font-weight: bold;
+}
+
+.text-center {
+text-align: center;
+}
+
+.text-green-500 {
+color: #28a745;
+}
+
+/* Partner Table Styles */
+.partner-table {
+max-width: 1100px;
+margin: 0 auto;
+overflow-x: auto;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.partner-table table {
+width: 100%;
+border-collapse: collapse;
+background: white;
+border: 1px solid #e0e0e0;
+}
+
+.partner-table th {
+background: #3a7d8c;
+color: white;
+padding: 16px 20px;
+text-align: center;
+font-weight: 500;
+font-size: 1rem;
+border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.partner-table th:first-child {
+text-align: left;
+width: 35%;
+}
+
+.partner-table th:last-child {
+border-right: none;
+}
+
+.partner-table td {
+padding: 12px 20px;
+text-align: center;
+border-right: 1px solid #f0f0f0;
+font-size: 0.95rem;
+}
+
+.partner-table td:first-child {
+text-align: left;
+font-weight: 500;
+color: #444;
+}
+
+.partner-table tr:nth-child(even) {
+background-color: #fcfcfc;
+}
+
+.partner-table tr:hover {
+background-color: #f8f9ff;
+}
+
+.section-label {
+background: #f5f5f5 !important;
+font-weight: 600;
+color: #333;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+font-size: 0.9rem;
+}
+
+.section-label td {
+border-top: 2px solid #e0e0e0;
+border-bottom: 2px solid #e0e0e0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+@media (max-width:576px) {
+.btn-outline {
+  margin-top: 15px;
+}
+}
+
+@media (max-width: 480px) {
+.partner-table {
+  overflow-x: scroll;
+}
+
+.partner-table th,
+.partner-table td {
+  min-width: 80px;
+  padding: 6px 10px;
+}
+
+.partner-table th:first-child,
+.partner-table td:first-child {
+  min-width: 120px;
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 10;
+  border-right: 2px solid #e0e0e0;
+}
+
+.partner-table th:first-child {
+  background: #3a7d8c;
+  color: white;
+}
+}
